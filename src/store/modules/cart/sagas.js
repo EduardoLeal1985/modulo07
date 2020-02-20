@@ -18,7 +18,7 @@ function* addToCart({ id }) {
   const amount = currentAmount + 1;
 
   if (amount > stockAmount) {
-    console.tron.warn('ERRO');
+    console.tron.warn('ERRO: SEM ESTOQUE');
     return;
   }
 
